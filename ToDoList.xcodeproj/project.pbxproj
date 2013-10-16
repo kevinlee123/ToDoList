@@ -21,6 +21,10 @@
 		131BAF73180BA094008C8A48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131BAF54180BA094008C8A48 /* Foundation.framework */; };
 		131BAF7B180BA094008C8A48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 131BAF79180BA094008C8A48 /* InfoPlist.strings */; };
 		131BAF7E180BA094008C8A48 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 131BAF7D180BA094008C8A48 /* ToDoListTests.m */; };
+		131BAF8A180BA113008C8A48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 131BAF88180BA113008C8A48 /* ViewController.m */; };
+		131BAF8B180BA113008C8A48 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 131BAF89180BA113008C8A48 /* ViewController.xib */; };
+		131BAF98180BB868008C8A48 /* EditableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 131BAF97180BB868008C8A48 /* EditableCell.m */; };
+		131BAF9A180BB8A0008C8A48 /* EditableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 131BAF99180BB8A0008C8A48 /* EditableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		131BAF7A180BA094008C8A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		131BAF7C180BA094008C8A48 /* ToDoListTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoListTests.h; sourceTree = "<group>"; };
 		131BAF7D180BA094008C8A48 /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
+		131BAF87180BA113008C8A48 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		131BAF88180BA113008C8A48 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		131BAF89180BA113008C8A48 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		131BAF96180BB868008C8A48 /* EditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableCell.h; sourceTree = "<group>"; };
+		131BAF97180BB868008C8A48 /* EditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableCell.m; sourceTree = "<group>"; };
+		131BAF99180BB8A0008C8A48 /* EditableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditableCell.xib; sourceTree = "<group>"; };
+		131BAF9B180BD0CA008C8A48 /* EditableCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditableCellDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +126,13 @@
 				131BAF61180BA094008C8A48 /* AppDelegate.h */,
 				131BAF62180BA094008C8A48 /* AppDelegate.m */,
 				131BAF59180BA094008C8A48 /* Supporting Files */,
+				131BAF87180BA113008C8A48 /* ViewController.h */,
+				131BAF88180BA113008C8A48 /* ViewController.m */,
+				131BAF89180BA113008C8A48 /* ViewController.xib */,
+				131BAF96180BB868008C8A48 /* EditableCell.h */,
+				131BAF97180BB868008C8A48 /* EditableCell.m */,
+				131BAF99180BB8A0008C8A48 /* EditableCell.xib */,
+				131BAF9B180BD0CA008C8A48 /* EditableCellDelegate.h */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -227,6 +245,8 @@
 				131BAF65180BA094008C8A48 /* Default.png in Resources */,
 				131BAF67180BA094008C8A48 /* Default@2x.png in Resources */,
 				131BAF69180BA094008C8A48 /* Default-568h@2x.png in Resources */,
+				131BAF8B180BA113008C8A48 /* ViewController.xib in Resources */,
+				131BAF9A180BB8A0008C8A48 /* EditableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +283,8 @@
 			files = (
 				131BAF5F180BA094008C8A48 /* main.m in Sources */,
 				131BAF63180BA094008C8A48 /* AppDelegate.m in Sources */,
+				131BAF8A180BA113008C8A48 /* ViewController.m in Sources */,
+				131BAF98180BB868008C8A48 /* EditableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
