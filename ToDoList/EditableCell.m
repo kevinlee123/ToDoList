@@ -60,4 +60,11 @@
     return YES;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == self.txtCellString) {
+        [textField resignFirstResponder];
+    }
+    return NO;
+}
+
 @end
