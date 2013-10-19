@@ -63,7 +63,6 @@
 		131BAF96180BB868008C8A48 /* EditableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableCell.h; sourceTree = "<group>"; };
 		131BAF97180BB868008C8A48 /* EditableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableCell.m; sourceTree = "<group>"; };
 		131BAF99180BB8A0008C8A48 /* EditableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditableCell.xib; sourceTree = "<group>"; };
-		131BAF9B180BD0CA008C8A48 /* EditableCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditableCellDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +131,6 @@
 				131BAF96180BB868008C8A48 /* EditableCell.h */,
 				131BAF97180BB868008C8A48 /* EditableCell.m */,
 				131BAF99180BB8A0008C8A48 /* EditableCell.xib */,
-				131BAF9B180BD0CA008C8A48 /* EditableCellDelegate.h */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -459,6 +457,7 @@
 				131BAF83180BA094008C8A48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		131BAF84180BA094008C8A48 /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +466,7 @@
 				131BAF86180BA094008C8A48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EditableCellDelegate.h"
+#import "EditableCell.h"
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, EditableCellDelegate>
 

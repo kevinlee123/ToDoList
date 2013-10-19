@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EditableCellDelegate.h"
+
+@class EditableCell;
+
+@protocol EditableCellDelegate <NSObject>
+- (void)updateText: (NSString *)text forCell:(EditableCell*)cell;
+- (void)scrollToCell:(EditableCell*)cell;
+@end
 
 @interface EditableCell : UITableViewCell<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *txtCellString;

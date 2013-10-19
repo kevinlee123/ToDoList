@@ -19,6 +19,7 @@
 @implementation ViewController
 
 NSString *const EDITABLE_CELL_REUSE_IDENTIFIER = @"EditableCell";
+NSString *const PREFS_KEY = @"TodoItems";
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,7 +36,9 @@ NSString *const EDITABLE_CELL_REUSE_IDENTIFIER = @"EditableCell";
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    self.savedEntries = [NSMutableArray arrayWithObjects:nil];
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    self.savedEntries = [prefs mutableArrayValueForKey:PREFS_KEY];
+    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
@@ -59,14 +62,18 @@ NSString *const EDITABLE_CELL_REUSE_IDENTIFIER = @"EditableCell";
     [self.tableView setEditing:editing animated:animated];
 }
 
-- (void)updateEditableDataForCell:(EditableCell*)cell withText:(NSString *)text {
+- (void)updateText: (NSString *)text forCell:(EditableCell*)cell {
     NSIndexPath* indexPath = [self.tableView indexPathForCell:cell];
     if (indexPath != nil) {
         [self.savedEntries setObject:text atIndexedSubscript:indexPath.row];
+
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        [prefs setObject:self.savedEntries forKey:PREFS_KEY];
+        [prefs synchronize];
     }
 }
 
-- (void)offsetScrollToCell:(EditableCell*)cell {
+- (void)scrollToCell:(EditableCell*)cell {
     CGPoint pointInTable = [cell convertPoint:cell.txtCellString.frame.origin toView:self.tableView];
     CGPoint contentOffset = self.tableView.contentOffset;
     

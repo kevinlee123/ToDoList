@@ -47,7 +47,7 @@
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField*)textfield {
-    [self.cellDelegate offsetScrollToCell:self];
+    [self.cellDelegate scrollToCell:self];
     
     return YES;
 }
@@ -55,7 +55,7 @@
 -(BOOL)textFieldShouldEndEditing:(UITextField *)textField {
     [textField resignFirstResponder];
     
-    [self.cellDelegate updateEditableDataForCell:self withText:self.txtCellString.text];
+    [self.cellDelegate updateText:self.txtCellString.text forCell:self];
     
     return YES;
 }
